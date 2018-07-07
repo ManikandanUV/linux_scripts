@@ -1,4 +1,4 @@
 #!/bin/bash
 thunderbird &
-kdocker -d 5 -l -t -n 'Mozilla Thunderbird'
+kdocker -d 15 -l -t -n 'Mozilla Thunderbird'
 
