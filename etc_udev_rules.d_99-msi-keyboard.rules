@@ -1,0 +1,2 @@
+# run MSI-KEYBOARD to configure the keyboard illumination
+ACTION=="add", ATTRS{idVendor}=="1770", ATTRS{idProduct}=="ff00", RUN+="/usr/local/bin/msi-keyboard 'normal' 'ff0000' 'ff0000' 'ff0000'"

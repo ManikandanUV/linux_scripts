@@ -1,0 +1,1 @@
+- If steam controller does not work in games but works in big picture mode, chmod /dev/uinput to 666.
