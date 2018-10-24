@@ -1,1 +1,2 @@
 - If steam controller does not work in games but works in big picture mode, chmod /dev/uinput to 666.
+- redshift-gtk -l 36.0999:-80.2442
