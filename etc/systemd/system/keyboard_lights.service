@@ -1,0 +1,17 @@
+[Unit]
+Description=msi keyboard lights
+After=network.target
+
+
+[Service]
+ExecStart= /usr/bin/msi-keyboard -m normal -c left,red,high -c middle,red,high -c right,red,high
+ExecStop= /usr/bin/msi-keyboard -m normal -c left,red,high -c middle,red,high -c right,red,high
+Restart=always
+RestartSec=10                       # Restart service after 10 seconds if node service crashes
+StandardOutput=syslog               # Output to syslog
+StandardError=syslog                # Output to syslog
+SyslogIdentifier=msi-keyboard-lights
+
+
+[Install]
+WantedBy=multi-user.target

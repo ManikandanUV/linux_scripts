@@ -14,5 +14,5 @@ fi
 
 TIME_SINCE=$(($(date +%s) - $(date --date="$TIMESTAMP" +%s)))
 FORMATTED_TIME_SINCE=$(date -u -d @"$TIME_SINCE" +'%-Hh %-Mm %-Ss')
-FORMATTED_DAYS_SINCE=$(($(date -u -d @"$TIME_SINCE" +'%-H') /24))d
+FORMATTED_DAYS_SINCE=$(($(date -u -d @"$TIME_SINCE" +'%-d') - 1))d
 echo updated $FORMATTED_DAYS_SINCE $FORMATTED_TIME_SINCE ago
